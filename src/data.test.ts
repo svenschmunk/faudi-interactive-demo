@@ -1,0 +1,4 @@
+import {describe,it,expect} from 'vitest';
+import {samples,validatePdf} from './data';
+describe('synthetic evidence',()=>{for(const sample of samples)it(sample.id+' quotes match PDF page source',()=>{for(const requirement of sample.requirements){expect(requirement.sources.length).toBeGreaterThan(0);for(const source of requirement.sources)expect(sample.pages[source.page-1]).toContain(source.quote)} expect(sample.requirements).toHaveLength(6)});it('exercises all four statuses',()=>expect(new Set(samples.flatMap(s=>s.requirements.map(r=>r.status))).size).toBe(4));});
+it('rejects invalid, empty and oversized uploads',()=>{expect(validatePdf({name:'a.txt',size:10})).toBeTruthy();expect(validatePdf({name:'a.pdf',size:0})).toBeTruthy();expect(validatePdf({name:'a.pdf',size:21*1024*1024})).toBeTruthy();expect(validatePdf({name:'a.PDF',size:100})).toBe('')});

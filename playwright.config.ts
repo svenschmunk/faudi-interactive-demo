@@ -1,0 +1,2 @@
+import {defineConfig,devices} from '@playwright/test';
+export default defineConfig({testDir:'tests',webServer:{command:'npm run dev -- --port 4173',url:'http://localhost:4173/faudi-interactive-demo/',reuseExistingServer:!process.env.CI},use:{baseURL:'http://localhost:4173/faudi-interactive-demo/'},projects:[{name:'desktop',use:{...devices['Desktop Chrome']}},{name:'mobile',use:{...devices['iPhone 13'],defaultBrowserType:'chromium'}}]});
