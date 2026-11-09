@@ -1,4 +1,4 @@
-# FAUDI AI – Specification Analyzer
+# FAUDI Aviation – Specification Analyzer
 
 Responsive Hochschuldemo mit React, Vite und TypeScript. Unabhängiger Demonstrator, kein offizielles FAUDI-Produkt. Alle Dokumente und Werte sind synthetisch und nicht für Engineering-Freigaben geeignet.
 
@@ -22,7 +22,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Browser-Tests prüfen Desktop und Smartphone, Quellen für widersprüchliche Druckangaben, Erklärdialoge und die Abgrenzung eigener Uploads. Unit-Tests gleichen alle Zitate mit der jeweiligen synthetischen Dokumentseite ab.
+Browser-Tests prüfen Desktop und Smartphone, Quellen für widersprüchliche Druckangaben und Erklärdialoge. Unit-Tests gleichen alle Zitate mit der jeweiligen synthetischen Dokumentseite ab.
 
 ## Demo nutzen
 
