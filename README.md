@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Die URL enthält den Pfad `/faudi-interactive-demo/`.
+Die URL enthält den Pfad `/project-demo-handout/`.
 
 ## Prüfen
 
@@ -39,7 +39,7 @@ Eigene PDFs (maximal 20 MB) werden ausschließlich lokal auf Endung, Größe und
 In Repository Settings → Pages als Source **GitHub Actions** wählen. Der Workflow prüft Pull Requests; Pushes nach `main` bauen und veröffentlichen nach erfolgreichen Tests automatisch. Der PR selbst veröffentlicht noch keine Seite.
 
 Erwartete URL nach Merge und erfolgreichem Deployment:
-https://svenschmunk.github.io/faudi-interactive-demo/
+https://svenschmunk.github.io/project-demo-handout/
 
 Diese URL kann anschließend für einen QR-Code verwendet werden. Bei Umbenennung des Repositorys `base` in `vite.config.ts` anpassen. Die Anwendung verwendet keine Unterseiten-Routen.
 
